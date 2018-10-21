@@ -1,0 +1,391 @@
+<head>
+    <title>Glostars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/s.css">
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% - 20%);
+            height: calc(100% - 20px);
+            position: relative;
+        }
+
+        #modalImg {
+            max-height: 100%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .starModal .btn-md{
+            background-color: Transparent;
+            position: absolute;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            right: 20px;
+            bottom: 20px;
+            width: 79px;
+            height: 70px;
+            font-size:10px;
+            
+        }
+        .fa-star-o{
+            color: blueviolet;
+            font-size: 10px;
+        }
+        .fa-star{
+            color: blueviolet;
+            font-size: 10px;
+        }
+
+
+        .optionModal {
+            position: absolute;
+            right: 30px;
+            bottom: 120px;
+            width: 60px;
+            height: 60px;
+        }
+
+
+        .modal-data-containner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .left {
+            position: absolute;
+            height: 100%;
+            width: 10%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .left>img {
+            display: none;
+            width: 60px;
+            height: 80px;
+        }
+
+        .left:hover>img {
+            display: block;
+        }
+
+        .right {
+            position: absolute;
+            height: 100%;
+            width: 10%;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right>img {
+            display: none;
+            width: 60px;
+            height: 80px;
+        }
+
+        .right:hover>img {
+            display: block;
+        }
+
+
+
+
+        a .fa {
+            font-size: 70px;
+        }
+
+        .closeModal {
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            background: #0000003b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .closeModal>img {
+            width: 16px;
+            height: 20px;
+        }
+
+        #customModal {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background: #000000;
+            display: none;
+            z-index: 999;
+        }
+
+        #customModal.show {
+            display: block;
+        }
+        .modal-content .modal-header img{
+            border-radius:50%;
+        }
+        .modal-content .modal-header .dd{
+            font-size: 15px;
+            color: dimgrey;
+        }
+        .modal-content .modal-header .modal-title{
+            font-size: 15px;
+            color: black;
+        }
+        table {
+            border-collapse: separate;
+            border-spacing: 20px 0;
+        }
+
+        td {
+            padding: 10px 0;
+        }
+        .btn-light{
+            background-color: white;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
+        }
+        .ex1 {
+            padding-left: 350px;
+        }
+        .modal-content{
+            border-radius:0%;
+        }
+        .btn-success{
+            border-radius:0%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Image galary Design</h1>
+
+    <div class="gallery">
+        <a href="images/Picture1.jpg" data-lightbox="mygallery" class="galleryItem"> <img src="images/Picture1.jpg"
+                class="gallery-img">
+        </a>
+        <a href="images/F-H.jpg" data-lightbox="mygallery" class="galleryItem"> <img src="images/F-H.jpg" class="gallery-img">
+        </a>
+
+        <a href="images/I-BP.jpg" data-lightbox="mygallery" class="galleryItem"> <img src="images/I-BP.jpg" class="gallery-img">
+        </a>
+        <a href="images/LI-BP.jpeg" data-lightbox="mygallery" class="galleryItem"><img src="images/LI-BP.jpeg" class="gallery-img">
+        </a>
+        <a href="images/S-BH.jpg" data-lightbox="mygallery" class="galleryItem"> <img src="images/S-BH.jpg" class="gallery-img">
+        </a>
+        <a href="images/S-H.jpg" data-lightbox="mygallery" class="galleryItem"> <img src="images/S-H.jpg" class="gallery-img">
+        </a>
+        <a href="images/S_HH.jpg" data-lightbox="mygallery" class="galleryItem"> <img src="images/S_HH.jpg" class="gallery-img">
+        </a>
+        <a href="images/W-BI.jpg" data-lightbox="mygallery" class="galleryItem"> <img src="images/W-BI.jpg" class="gallery-img">
+        </a>
+    </div>
+    <div id="customModal">
+        <div class="modal-data-containner">
+
+            <div class="image-container">
+                <img id="modalImg" />
+                <a href="#" class="closeModal">
+                    
+                    <img src="images/close.png">
+                </a>
+
+                <a href="#" class="optionModal">
+                    
+                    <img data-toggle="modal" data-target="#myModal" src="images/option.png">
+                </a>
+
+                <a href="#" class="starModal">
+                
+                    <button type="button" class="btn btn-md"><i class="fa fa-star-o"></i> <span></span></button>
+                </a>
+
+            </div>
+
+            <a href="#" class="left">
+                
+                <img src="images/prev.png">
+            </a>
+
+            <a href="#" class="right">
+           
+                <img src="images/next.png">
+            </a>
+
+
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+
+                    <table>
+                        <tr>
+                            <td><img src="images/W-BI.jpg" alt="Avatar" style="width:100px"> </td>
+                            <td>
+                                <div>
+                                <h2 class="modal-title">Modal Heading</h2>
+                                </div>
+                                <div>
+                                    <p>1d</p>
+                                </div>
+                            
+                            </td>
+                            <td class="ex1"><button type="button" class="btn btn-success">Follow</button></td>
+                        </tr>
+                        <tr>
+                            <td>Modal body..</td>
+                        </tr>
+                    </table>
+
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+
+
+                    <button type="button" class="btn btn-light" style="float: left">Report</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+
+            var mapIndex = {};
+            var mapUrl = {};
+            var currentIndex = 0;
+            var totalImage = 0;
+            var intervalId = 0;
+            var i = 0;
+
+
+            function initImageInformation() {
+                var allImage = $('.gallery-img');
+                totalImage = allImage.length;
+                for (var i = 0; i < totalImage; i++) {
+                    console.log(i);
+                    mapUrl[i] = $(allImage[i]).attr('src');
+                    mapIndex[$(allImage[i]).attr('src')] = i;
+                }
+                console.log(totalImage);
+            }
+            initImageInformation();
+            $('.gallery-img').click(function (e) {
+                var currentImg = $(this);
+                e.preventDefault();
+                console.log("Test");
+
+                currentIndex = mapIndex[currentImg.attr('src')];
+                console.log(currentIndex);
+
+                $('#modalImg').attr('src', currentImg.attr('src'));
+                $('#customModal').addClass("show");
+                $('.image-container').addClass('slide');
+                startInterval();
+            });
+
+            $('.right').click(function () {
+                if (currentIndex < totalImage - 1) {
+                    currentIndex++;
+                    $('#modalImg').attr('src', mapUrl[currentIndex]);
+                } else {
+                    currentIndex = 0;
+                    $('#modalImg').attr('src', mapUrl[currentIndex]);
+                }
+            });
+
+
+            $('.left').click(function () {
+                if (currentIndex == 0) {
+                    currentIndex = totalImage - 1;
+                    $('#modalImg').attr('src', mapUrl[currentIndex]);
+                } else {
+                    currentIndex--;
+                    $('#modalImg').attr('src', mapUrl[currentIndex]);
+                }
+            });
+
+            $('.closeModal').click(function () {
+                $('#customModal').removeClass("show");
+                clearInterval(intervalId);
+            });
+            function startInterval() {
+                intervalId = setInterval(function () {
+                    if ($('.image-container').hasClass('slide')) {
+                        $('.right').click();
+                    }
+
+                }, 3000);
+            }
+
+            $('#modalImg').click(function () {
+                if ($('.image-container').hasClass('slide')) {
+                    $('.image-container').removeClass('slide');
+                } else {
+                    $('.image-container').addClass('slide');
+                }
+            });
+
+        });
+        document.querySelector('button').addEventListener('click', function () {
+            const icon = this.querySelector('i');
+            const text = this.querySelector('span');
+
+            if (icon.classList.contains('fa-star-o')) {
+                icon.classList.remove('fa-star-o');
+                icon.classList.add('fa-star');
+
+            } else {
+                icon.classList.remove('fa-star');
+                icon.classList.add('fa-star-o');
+            }
+        });
+
+    </script>
+
+</body>

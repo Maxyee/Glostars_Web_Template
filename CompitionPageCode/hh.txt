@@ -1,0 +1,44 @@
+<head>
+        <title>Glostars</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/s.css">
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+    <style>
+        .lb-data .lb-closeContainer .lb-close{
+            height: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Image galary Design</h1>
+    
+    <div class="gallery">
+        <a href="images/F-H.jpg" data-lightbox="mygallery"> <img src="images/F-H.jpg">    </a>
+        <a href="images/I-BP.jpg"data-lightbox="mygallery"> <img src="images/I-BP.jpg">   </a>
+        <a href="images/LI-BP.jpeg"data-lightbox="mygallery"><img src="images/LI-BP.jpeg"> </a>
+        <a href="images/S-BH.jpg"data-lightbox="mygallery"> <img src="images/S-BH.jpg">   </a>
+        <a href="images/S-H.jpg"data-lightbox="mygallery"> <img src="images/S-H.jpg">    </a>
+        <a href="images/S_HH.jpg"data-lightbox="mygallery"> <img src="images/S_HH.jpg">   </a>
+        <a href="images/W-BI.jpg"data-lightbox="mygallery"> <img src="images/W-BI.jpg">   </a>
+        <a href="images/F-H.jpg"data-lightbox="mygallery"> <img src="images/F-H.jpg">    </a>
+    </div>
+
+    <script>
+            lightbox.option({
+              'resizeDuration': 200,
+              'wrapAround': true,
+              'showImageNumberLabel':false,
+              
+            
+            })
+
+        </script>
+
+</body>
