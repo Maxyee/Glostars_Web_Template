@@ -149,10 +149,17 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
-.bg-1 {
+/* .bg-1 {
   background: url(../images/backgrounds/banner-bg.jpg) no-repeat;
   background-size: cover;
+} */
+
+
+.bg-1 {
+  background-color: #AE79AD;
+  background-size: cover;
 }
+
 
 .bg-2 {
   background: url(../images/backgrounds/elipse-bg.png) no-repeat;
@@ -189,8 +196,13 @@ a:focus, a:hover {
   background-position: center;
 }
 
+.bg-shape2 {
+  background-color: #AE79AD;
+  background-position: center;
+}
+
 .bg-primary-shape {
-  background: url(../images/backgrounds/shape-overlay-bg.jpg) no-repeat;
+  /*background: url(../images/backgrounds/shape-overlay-bg.jpg) no-repeat;*/
   background-size: cover;
   background-position: center;
 }
@@ -549,7 +561,7 @@ a:focus, a:hover {
 
 .footer-main {
   padding: 50px 0;
-  background: #7d71d3;
+  background: #AE79AD;
 }
 
 @media (max-width: 768px) {
