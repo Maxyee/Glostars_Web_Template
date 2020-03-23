@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   body{
-    background: url("poster.png");
+    background: url("../images/poster.png");
     background-size: cover;
   }
 }
@@ -189,7 +189,7 @@ a:focus, a:hover {
 
 
 .bg-1 {
-  background-color: #AE79AD;
+  background-color: none;
   background-size: cover;
 }
 
@@ -224,10 +224,16 @@ a:focus, a:hover {
   background-position: center;
 }
 
-.bg-shape {
+/* .bg-shape {
   background: url(../images/backgrounds/shape-bg.png) no-repeat;
   background-position: center;
+} */
+
+.bg-shape {
+  background: white;
+  background-position: center;
 }
+
 
 .bg-shape2 {
   background-color: #AE79AD;
@@ -236,6 +242,7 @@ a:focus, a:hover {
 
 .bg-primary-shape {
   /*background: url(../images/backgrounds/shape-overlay-bg.jpg) no-repeat;*/
+  background: white;
   background-size: cover;
   background-position: center;
 }
@@ -556,7 +563,7 @@ a:focus, a:hover {
   /* background: #7d71d3; */
   /* background: #C199C1; */
   /* background: #7C287C; */
-  background: #AE79AD;
+  background: none;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -594,7 +601,7 @@ a:focus, a:hover {
 
 .footer-main {
   padding: 50px 0;
-  background: #AE79AD;
+  background: #9B5C9C;
 }
 
 @media (max-width: 768px) {
