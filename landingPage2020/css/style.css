@@ -1,7 +1,7 @@
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700|Open+Sans:400,400i,700");
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat';
   -webkit-font-smoothing: antialiased;
 }
 
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
   }
 }
-@media (max-width:767px){
+/* @media (max-width:767px){
   #videoBG{
     display: none;
   }
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
     background: url("../images/poster.png");
     background-size: cover;
   }
-}
+} */
 /*=== Video Background CSS End===*/
 
 
@@ -110,7 +110,7 @@ ul.feature-list {
 ul.feature-list li {
   list-style: none;
   margin: 15px 0;
-  font-size: 16px;
+  font-size: 25px;
 }
 
 ul.post-tag {
@@ -277,10 +277,10 @@ a:focus, a:hover {
 
 .section-title h2 {
   font-size: 48px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Montserrat';
   font-weight: 300;
   margin-bottom: 30px;
-  font-weight: 300;
+  font-weight: 800;
 }
 
 .section-title p {
@@ -578,7 +578,7 @@ a:focus, a:hover {
 .main-nav .navbar-nav .nav-item .nav-link {
   position: relative;
   text-align: center;
-  font-size: 13px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #fff;
   padding-left: 15px;
@@ -1093,7 +1093,7 @@ a:focus, a:hover {
 
 .pricing-table {
   background: #fff;
-  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1); */
   padding: 50px 0;
   margin-bottom: 80px;
 }
