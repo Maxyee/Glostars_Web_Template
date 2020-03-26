@@ -32,30 +32,16 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
   }
 }
-/* @media (max-width:767px){
-  #videoBG{
-    display: none;
-  }
-  body{
-    background: url("../images/poster.png");
-    background-size: cover;
-  }
-} */
+
 /*=== Video Background CSS End===*/
-
-.box {
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-}
-.box:after {
-  content: ' ';
-  border-top: 100vh solid #dd4f39;
-  border-right: 100vw solid transparent;
-  width: 0;
-  position: absolute;
+.lineColor{
+  color: #000;
 }
 
+.biggerIcon{
+  height: 60px;
+  width: 60px;
+}
 
 h1 {
   font-size: 60px;
@@ -158,8 +144,8 @@ ul.social-icons li a {
 }
 
 ul.social-icons li a i {
-  font-size: 16px;
-  line-height: 35px;
+  font-size: 44px;
+  line-height: 60px;
 }
 
 ul.rating {
@@ -248,7 +234,7 @@ a:focus, a:hover {
 
 
 .bg-shape2 {
-  background-color: #AE79AD;
+  background: url(../images/girlwithcamera.jpg) no-repeat;
   background-position: center;
 }
 
