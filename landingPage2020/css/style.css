@@ -16,10 +16,11 @@ h1, h2, h3, h4, h5, h6 {
 #videoBG{
   position: fixed;
   z-index: -1;
-
   width: 100%;
   height: auto;
+  opacity: 0.75;
 }
+
 @media (min-aspect-ratio: 16/9){
   #videoBG{
     width: 100%;
@@ -176,7 +177,7 @@ ul.rating li {
 }
 
 a:focus, a:hover {
-  color: #7d71d3;
+  color: #9B5C9C;
   text-decoration: none;
 }
 
